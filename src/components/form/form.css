@@ -1,0 +1,9 @@
+.input-pass-wrapper{
+    position: relative;
+}
+.fa-eye,.fa-eye-slash,.fa-search{
+position: absolute;
+right:10px;
+top:10px;
+cursor: pointer;
+}
