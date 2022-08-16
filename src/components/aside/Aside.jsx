@@ -2,12 +2,14 @@ import React from "react";
 import "./aside.css";
 import { useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import { useAside } from "../../context/asideContext";
 
 
 export const Aside = () => {
-  const {pathname} = useLocation()
+  const {pathname} = useLocation();
+  const {isDrawerOpen} = useAside()
   return pathname !=="/login" && pathname !== "/signup" ?  (
-    <div className="hidden sm:block sm:w-1/5 m-5 rounded-3xl bg-color-blue aside text-white   ">
+    <div className={`transition ease-in-out delay-500 fixed sm:block w-3/5 sm:static sm:w-1/5 sm:m-5 sm:rounded-3xl bg-color-blue aside text-white ${isDrawerOpen ? "left-46 z-10" : "-left-3/4"} `  }>
       <div className="h-1/6 flex text-3xl font-bold justify-center flex-col  ml-9">
         Dash.
       </div>

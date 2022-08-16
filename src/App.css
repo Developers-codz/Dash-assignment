@@ -25,5 +25,20 @@ body{
 .text-xxs{
   font-size:10px
 }
+.drawer {
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.drawer-close{
+  left:-30px;
+}
+.drawer-open{
+  left:50%;
+}
+.drawer > * {
+  margin-right: 8px;
+  font-size: x-large;
+}
 
 
