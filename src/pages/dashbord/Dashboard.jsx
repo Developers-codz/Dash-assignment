@@ -48,7 +48,7 @@ export const Dashboard = () => {
           {/* top products */}
           <div className="flex flex-col sm:flex-row sm:justify-between mt-4 ">
           <TopProduct />
-          <div className="w-1/2 rounded-lg py-2 px-4 ml-4 bg-white">
+          <div className="sm:w-1/2 rounded-lg py-2 px-4 sm:ml-4 bg-white">
               <div className="flex">
                 <div className="grow font-medium text-m">Today's schedule</div>
                 <div className="text-sm text-slate-500">See all</div>

@@ -19,7 +19,7 @@ const data = {
 
 export const TopProduct = () => {
   return (
-    <div className="w-1/2 rounded-lg py-2 px-4 mr-4 bg-white">
+    <div className="sm:w-1/2 rounded-lg my-2 sm:my-0 py-2 px-4 sm:mr-4 bg-white">
     <div className="flex">
       <div className="grow font-medium text-m">Top Products</div>
       <div className="text-sm text-slate-500">May-June 2021</div>
