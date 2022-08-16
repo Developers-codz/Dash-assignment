@@ -16,7 +16,7 @@ const options = {
   },
   scales: {
     y: {
-      beginAtZero: true,
+      // beginAtZero: true,
       grid: {
         drawBorder: false,
       },
@@ -76,7 +76,7 @@ export const Activities = () => {
         </div>
       </div>
       {/* Chart */}
-      <div className="w-9/12 mx-auto  my-2">
+      <div className="w-9/12 h-360 mx-auto  my-2">
         {" "}
         <Line options={options} data={data} />
       </div>
