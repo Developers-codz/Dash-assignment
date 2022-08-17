@@ -13,12 +13,12 @@ export const Login = () => {
           <h1 className="text-3xl font-bold">Sign In</h1>
           <div>Sign in to your account</div>
           <div className="flex flex-col sm:flex-row mx-auto justify-between mt-2">
-            <button className=" mx-auto rounded-lg bg-white px-4 sm:mx-4 py-1 my-2  ">
-            <i className="fa fa-google" aria-hidden="true"></i>
+            <button className=" mx-auto  rounded-lg bg-white px-4 sm:mr-4 py-1 my-2  ">
+            <i className="fab mr-2 fa-google" aria-hidden="true"></i>
               Sign in with google
             </button>
             <button className="rounded-lg bg-white px-4 py-1 my-2 mx-auto">
-            <i className="fa fa-apple" aria-hidden="true"></i>
+            <i className="fab fa-apple mr-2" aria-hidden="true"></i>
               Sign in with Apple
             </button>
           </div>

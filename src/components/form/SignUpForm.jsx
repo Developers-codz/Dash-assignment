@@ -4,9 +4,8 @@ import "./form.css"
 export const SignUpForm = () => {
   const [isEyeOpen, setEyeOpen] = useState(false);
   return (
-    <form className="mx-2 sm:w-5/6  bg-white flex justify-center items-center flex-col my-5 rounded-lg p-8">
+    <form className="mx-2 sm:w-5/6 sm:mx-0  bg-white flex justify-center items-center flex-col my-5 rounded-lg py-8 px-5">
         <div className="flex justify-between items-center w-full">
-
         <div className="flex flex-col">
             <label htmlFor="firstname" className="self-start ">First Name</label>
             <input type="text" name="firstname" id="firstname" className="bg-slate-100 px-2 py-1  w-4/5 " />

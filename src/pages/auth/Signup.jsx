@@ -11,10 +11,12 @@ export const Signup = () => {
           <h1 className="text-3xl font-bold">Create an account</h1>
           <div>Create an account to use dashboard</div>
           <div className="flex justify-between flex-col sm:flex-row mt-2 w-5/6 ">
-            <button className="rounded-lg bg-white px-4 py-1 my-2 mx-auto sm:mr-3">
+            <button className="rounded-lg bg-white px-4 py-1 my-2 mx-auto sm:ml-0 sm:mr-3">
+              <i className="fab fa-google mr-2" aria-hidden="true"></i>
               Sign up with google
             </button>
             <button className="rounded-lg bg-white px-4 py-1 my-2 mx-auto sm:ml-3">
+            <i className="fab fa-apple mr-2" aria-hidden="true"></i>
               Sign up with Apple
             </button>
           </div>

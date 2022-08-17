@@ -5,6 +5,21 @@ import { Loader } from "../../components/loader/Loader";
 
 export const Users = () => {
   const [users, setUsers] = useState([]);
+  const [searchText,setSearchText] = useState("")
+ const [searchedData,setSearchedData] = useState([])
+  const searchHandler = (e) =>{
+    setSearchText(e.target.value)
+  }
+
+  const getSearchedData = (arr,query) => arr.filter(ar => {
+    const q2 =query.toLowerCase()
+  
+    return ar.name.toLowerCase().includes(q2)
+  })
+  
+  const searchedText = getSearchedData (users,searchText);
+
+  console.log(searchedData)
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
@@ -21,22 +36,25 @@ export const Users = () => {
               <div className="input-pass-wrapper mx-auto mt-7 sm:mt-auto sm:mr-5 order-10 sm:order-2 ">
                 <input
                   type="text"
-                  name="searchQuery"
+                  name="searchText"
+                  value={searchText}
                   id="searchbar"
                   className="bg-slate-100 rounded-lg py-1 px-2"
                   placeholder="Search in table.."
+                  onChange={searchHandler}
                 />
                 <i className="fa fa-search" area-hidden="true"></i>
               </div>
               <button className="border-solid border-2 border-slate-100 mx-2 px-3 rounded-md order-3">
+              <i className="far fa-regular fa-filter mr-1"></i>
                 Filter
               </button>
               <button className="bg-color-blue text-white mx-2 px-4 rounded-md order-4">
-                +Add
+                + Add
               </button>
             </div>
         { users.length <= 0 ? <div className="flex justify-center items-center h-96"><Loader /></div> : <ul className=" mt-10">
-            { users.map((user, i) => {
+            { searchedText.map((user, i) => {
               return (
                 <li
                   key={indexedDB}
