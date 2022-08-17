@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const LoginForm = () => {
   return (
@@ -24,9 +25,11 @@ export const LoginForm = () => {
             <button className="text-color-blue my-1 self-start">
               Forgot password ?
             </button>
+            <Link to="/dashboard" className="bg-color-blue text-white w-full rounded-md my-2 py-1 text-center">Dummy Login</Link>
             <button className="bg-color-blue text-white w-full rounded-md my-2 py-1">
               Sign In
             </button>
+          
           </form>
   )
 }

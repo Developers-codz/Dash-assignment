@@ -70,7 +70,9 @@ export const Setting = () => {
             </div>
             <div className="bg-white px-8 py-4 rounded-lg my-3 text-center text-red-600">
               <h3 className="font-medium text-lg pb-3 ">Danger Zone</h3>
-              <button className="border-solid border-2 border-red-600 rounded-lg w-full hover:text-white hover:bg-red-600 hover:font-bold py-1">Delete My Account</button>
+              <button className="border-solid border-2 border-red-600 rounded-lg w-full hover:text-white hover:bg-red-600 hover:font-bold py-1">
+                Delete My Account
+              </button>
             </div>
           </div>
         </div>

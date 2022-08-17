@@ -1,5 +1,5 @@
 import React from "react";
-import { Aside, Header, TopProduct,Activities } from "../../components";
+import { Aside, Header, TopProduct,Activities, Schedule } from "../../components";
 
 
 export const Dashboard = () => {
@@ -43,39 +43,10 @@ export const Dashboard = () => {
               <div className="text-2xl font-bold">892</div>
             </div>
           </div>
-          {/* Activities */}
             <Activities />
-          {/* top products */}
           <div className="flex flex-col sm:flex-row sm:justify-between mt-4 ">
-          <TopProduct />
-          <div className="sm:w-1/2 rounded-lg py-2 px-4 sm:ml-4 bg-white">
-              <div className="flex">
-                <div className="grow font-medium text-m">Today's schedule</div>
-                <div className="text-sm text-slate-500">See all</div>
-              </div>
-              <div className="flex my-2 ml-2">
-                <div className="bg-green-500 w-1 h-auto mr-2"></div>
-                <div className="grow">
-                  <h6 className="font-sm text-slate-600 text-sm">
-                    Meeting with suppliers from Kuta Bali
-                  </h6>
-                  <small className="block text-slate-500">14:00-15:00</small>
-                  <small className="block text-slate-500">
-                    at Sunset Road, Kuta, Bali{" "}
-                  </small>
-                </div>
-              </div>
-              <div className="flex my-2 ml-2">
-                <div className="bg-purple-500 w-1 h-auto mr-2"></div>
-                <div className="grow">
-                  <h6 className="font-sm text-slate-600 text-sm">
-                    Check operation at Giga Factory 1
-                  </h6>
-                  <small className="block text-slate-500">18.00-20.00</small>
-                  <small className="block text-slate-500">18.00-20.00</small>
-                </div>
-              </div>
-            </div>
+            <TopProduct />
+            <Schedule />
           </div>
         </div>
       </div>

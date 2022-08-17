@@ -14,23 +14,25 @@ export const Aside = () => {
         Dash.
       </div>
       <ul className="h-3/6  ml-9">
-        <NavLink to="/" className="my-6 text-lg font-bold leading-5 cursor-pointer block">
+        <NavLink to="/dashboard"
+         className="my-6 text-lg font-bold leading-5 cursor-pointer block"
+         >
           <i className="far mr-3 fa-regular fa-chart-pie"></i>
           <span>Dashboard</span>
         </NavLink>
-        <NavLink to="/" className="my-6 text-lg font-bold leading-5 cursor-pointer block">
+        <NavLink to="/dashboard" className="my-6 text-lg font-bold leading-5 cursor-pointer block">
         <i className="far mr-3 fa-tags"></i>
           <span>Transactions</span>
         </NavLink>
-        <NavLink to="/" className="my-6 text-lg font-bold leading-5 cursor-pointer block">
+        <NavLink to="/dashboard" className="my-6 text-lg font-bold leading-5 cursor-pointer block">
         <i className="far mr-3 fa-calendar" aria-hidden="true"></i>
           <span>Schedule</span>
         </NavLink>
-        <NavLink to="/users" className="my-7 text-lg font-bold leading-5 cursor-pointer block">
+        <NavLink to="/users" className="my-6 text-lg font-bold leading-5 cursor-pointer block">
         <i className="far mr-3 fa-user-circle" aria-hidden="true"></i>
             <span>Users</span>
         </NavLink>
-        <NavLink to="/settings" className="my-7 text-lg font-bold leading-5 cursor-pointer block">
+        <NavLink to="/settings" className="my-6 text-lg font-bold leading-5 cursor-pointer block">
         <i className="far mr-3 fa-cog" aria-hidden="true"></i>
           <span>Settings</span>
         </NavLink>
