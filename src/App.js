@@ -7,13 +7,13 @@ import { useAside } from "./context/asideContext";
 function App() {
   const { isDrawerOpen, setDrawerOpen } = useAside();
   const {pathname} = useLocation();
+  console.log(pathname)
   const clickHandler = () => {
     setDrawerOpen((prev) => !prev);
   };
   return (
-    // drawer-close  drawer-open
     <div className="App ">
-      {pathname !== "/" && pathname !=="signup" ? <div
+      {pathname !== "/" && pathname !== "/signup" ? <div
         className={`fixed inset-y-1/4 -left-8 drawer z-10 bg-color-blue text-white w-16 h-16 rounded-full  ${
           isDrawerOpen ? "left-1/2" : "inset-x-0" 
         } sm:invisible`}
