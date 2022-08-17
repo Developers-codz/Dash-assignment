@@ -1,7 +1,7 @@
 
     {
       "May-June": {
-        "guest": [100, 200, 345, 456, 222],
+        "guest": [100, 345, 200, 456, 222],
         "user": [200, 300, 100, 400, 350],
         "top product":["Basic Trees", "Custom Short Plants","Super Hoodies"] ,
         "sale":[ "55","31","41"]

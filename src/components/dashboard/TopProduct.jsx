@@ -41,7 +41,7 @@ export const TopProduct = () => {
         <div className="grow font-medium text-m">Top Products</div>
         <select
           value={month}
-          className="border-none bg-white text-slate-500 text-sm focus:outline-none"
+          className="border-none bg-white text-slate-500 text-sm focus:outline-none w-24"
           onChange={dataHandler}
         >
           {months.map((month) => (

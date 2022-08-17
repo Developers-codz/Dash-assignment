@@ -27,6 +27,7 @@ export const Activities = () => {
     },
     scales: {
       y: {
+        beginAtZero: true,
         grid: {
           drawBorder: false,
         },
@@ -83,7 +84,7 @@ export const Activities = () => {
       <div className="activity-head flex">
         <h3 className="grow">
           Activities
-         <select value={month} className="bg-white outline-none text-slate-500 mx-2 text-sm" onChange={changeHandler}>
+         <select value={month} className="bg-white outline-none text-slate-500 mx-5 text-sm w-24" onChange={changeHandler}>
            {months.map((month,i) => <option value={month} key={i}>{month}</option>)}
          </select>
         </h3>
