@@ -7,7 +7,6 @@ import { useAside } from "./context/asideContext";
 function App() {
   const { isDrawerOpen, setDrawerOpen } = useAside();
   const {pathname} = useLocation();
-  console.log(pathname)
   const clickHandler = () => {
     setDrawerOpen((prev) => !prev);
   };
