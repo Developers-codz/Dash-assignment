@@ -5,7 +5,7 @@ import { Dashbg, LoginForm, Oauth } from "../../components";
 
 export const Login = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-5/6">
      <Dashbg />
       <div className="justify-center items-center flex-col sm:flex sm:w-4/6 ">
         <div className="flex flex-col  items-center mx-auto justify-between mt-4 sm:items-start ">
