@@ -14,7 +14,7 @@ export const Users = () => {
   const getSearchedData = (arr,query) => arr.filter(ar => {
     const q2 =query.toLowerCase()
   
-    return ar.name.toLowerCase().includes(q2)
+    return ar.name.toLowerCase().includes(q2) || ar.email.toLowerCase().includes(q2)
   })
   
   const searchedText = getSearchedData (users,searchText);
