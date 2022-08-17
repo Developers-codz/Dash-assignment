@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Aside, Header } from "../../components";
+import { Aside, Header,Pagination } from "../../components";
 import profilePhoto from "../../assets/profilePhoto.png";
 import { Loader } from "../../components/loader/Loader";
 
@@ -29,6 +29,7 @@ export const Users = () => {
       .then((res) => setUsers(res));
   }, []);
   return (
+    <>
     <div className="flex">
       <Aside />
       <div className="sm:w-5/6 mt-6 mx-3 sm:ml-2 ">
@@ -91,5 +92,7 @@ export const Users = () => {
         </div>
       </div>
     </div>
+      <Pagination />
+    </>
   );
 };
