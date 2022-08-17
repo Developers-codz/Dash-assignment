@@ -65,7 +65,7 @@ export const Users = () => {
               {searchedText.map((user, i) => {
                 return (
                   <li
-                    key={indexedDB}
+                    key={i}
                     className=" flex justify-around w-full text-xs sm:text-base odd:bg-slate-100 even:bg-slate-200 py-3 px-2 rounded-md my-4"
                   >
                     <img
